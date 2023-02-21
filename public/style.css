@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+
+.logo{
+    position: relative;
+    left: -12vh;
+
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.head-title{
+    position: relative;
+    left: 85px;
+}
+
+.head-title a{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.head-title p {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    top: -8px;
+}
+
+.icons{
+    position: relative;
+    left: 12vh;
+}
+
+.icons i{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #000;
+    margin: 0 12px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+/* hover des social network  -------------------------------------------------------- */
+
+.icons i:hover
+{
+    background-color: #fff;
+    color: black;
+}
+
+
+.swiper{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+
+}
+
+/*.back-video{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+*/
+.back-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    object-position: center;
+    pointer-events: none;
+
+}
+
+
+
+
+.swiper-slide{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+}
+
+.slide-content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 20;
+}
+
+
+
+.slide-content .img-box .imgbx{
+    position: relative;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+}
+
+.slide-content .img-box .imgbx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    animation: sun 125s linear infinite;
+}
+
