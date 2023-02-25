@@ -1,0 +1,24 @@
+{
+  "name": "modernswiperslider",
+  "version": "1.0.0",
+  "description": "Please subscribe my channel\r This repository contains source codes of my youtube tutorial about swiperjs(https://www.youtube.com/naymurweb)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NAYMUR143/modernswiperslider.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NAYMUR143/modernswiperslider/issues"
+  },
+  "homepage": "https://github.com/NAYMUR143/modernswiperslider#readme",
+  "dependencies": {
+    "jquery": "^3.6.3",
+    "sass": "^1.58.3",
+    "swiper": "^9.0.5"
+  }
+}
