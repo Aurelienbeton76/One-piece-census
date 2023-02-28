@@ -1,3 +1,22 @@
+
+
+//------------------------------------MENU----------------------------//
+
+$(document).ready(function(){
+    $(".menu-button").click(function(){
+    $(".menu-bar").toggleClass( "open" );
+    })
+    }) 
+
+
+//------------------------------------------------------------------//    
+
+
+
+
+
+//------------------------------------PAGE D'ACCEUIL----------------------------//
+
 var swiper = new Swiper('.product-slider', {
     spaceBetween: 30,
     effect: 'fade',
@@ -52,6 +71,10 @@ swiper.on('slideChange', function () {
 $(".js-fav").on("click", function() {
     $(this).find('.heart').toggleClass("is-active");
 });
+
+
+//----------------------------------------------------------------------------//
+
 
 
 
