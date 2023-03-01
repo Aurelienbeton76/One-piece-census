@@ -99,10 +99,10 @@ a {
 
 
 
-/*-------------------------------- MENU --------------------------------------------------------*/ 
+/*-------------------------------- MENU-HOME --------------------------------------------------------*/ 
 
 @import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css");
-.menu, .menu-bar {
+.menu, .menu-bar-home {
     position: fixed;
     top: 0;
     left: 0;
@@ -111,7 +111,7 @@ a {
     margin: 0;
     padding: 0;
     background: #f7f7f7;
-    z-index:10;  
+    z-index:11;  
     overflow:hidden;
     box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26);
 }
@@ -156,13 +156,13 @@ a {
 .menu li a.home:before {
   content: "\f039";
 }
-.menu-bar li a:hover,
+.menu-bar-home li a:hover,
 .menu li a:hover,
 .menu li:first-child a {
   background: #bac736;
   color: #fff;
 }
-.menu-bar{
+.menu-bar-home{
     overflow:hidden;
     left:5em;
     z-index:5;
@@ -170,7 +170,7 @@ a {
     height:0;
     transition: all 0.1s ease-in-out;
 }
-.menu-bar li a{
+.menu-bar-home li a{
   display: block;
   height: 4em;
   line-height: 4em;
@@ -182,7 +182,7 @@ a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   transition: background 0.1s ease-in-out;
 }
-.menu-bar li:first-child a{
+.menu-bar-home li:first-child a{
     height:5em;
     background: #bac736;
     color: #fff;    
@@ -241,9 +241,343 @@ a {
         height:3.5em;
     }
 }
+/*-------------------------------- FIN DU MENU-HOME--------------------------------------------------------*/ 
+
+/*-------------------------------- MENU-CONTACT--------------------------------------------------------*/ 
+.menu, .menu-bar-contact {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  z-index:10;  
+  overflow:hidden;
+  box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26);
+}
+.menu li a{
+display: block;
+text-indent: -500em;
+height: 5em;
+width: 5em;
+line-height: 5em;
+text-align:center;
+color: #72739f;
+position: relative;
+border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+transition: background 0.1s ease-in-out;
+}
+.menu li a:before {
+font-family: FontAwesome;
+speak: none;
+text-indent: 0em;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+font-size: 1.4em;
+}
+.menu li a.search:before {
+content: "\f002";
+}
+.menu li a.archive:before {
+content: "\f187";
+}
+.menu li a.pencil:before {
+content: "\f040";
+}
+.menu li a.contact:before {
+content: "\f003";
+}
+.menu li a.about:before {
+content: "\f007";
+}
+.menu li a.home:before {
+content: "\f039";
+}
+.menu-bar-contact li a:hover,
+.menu li a:hover,
+.menu li:first-child a {
+background: #bac736;
+color: #fff;
+}
+.menu-bar-contact{
+  overflow:hidden;
+  left:5em;
+  z-index:5;
+  width:0;
+  height:0;
+  transition: all 0.1s ease-in-out;
+}
+.menu-bar-contact li a{
+display: block;
+height: 4em;
+line-height: 4em;
+text-align:center;
+color: #72739f;
+text-decoration:none;  
+position: relative;
+font-family:verdana;
+border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+transition: background 0.1s ease-in-out;
+}
+.menu-bar-contact li:first-child a{
+  height:5em;
+  background: #bac736;
+  color: #fff;    
+  line-height:5
+}
 
 
-/*-------------------------------- FIN DU MENU--------------------------------------------------------*/ 
+.para{
+  color:#033f72;
+  padding-left:100px;
+  font-size:3em;
+  margin-bottom:20px;
+}
+
+.open{
+  width:10em;
+  height:100%;
+}
+
+.close{
+  width: 0%;
+  height: 0%;
+}
+@media all and (max-width: 500px) {
+  .container{
+      margin-top:100px;
+  }
+  .menu{
+      height:5em;
+      width:100%;
+  }
+  .menu li{
+      display:inline-block;
+      float: left;
+  }
+  .menu-bar li a{
+      width:100%;
+  }
+  .menu-bar{
+      width:100%;
+      left:0;
+      height:0;
+  }
+  .open{
+      width:100%;
+      height:auto;
+  }
+  .para{
+  padding-left:5px;
+}  
+}
+@media screen and (max-height: 34em){
+.menu li,
+.menu-bar {
+  font-size:70%;
+}
+}
+@media screen and (max-height: 34em) and (max-width: 500px){
+.menu{
+      height:3.5em;
+  }
+}
+/*-------------------------------- FIN DU MENU-CONTACT--------------------------------------------------------*/ 
+
+
+
+
+
+/*-------------------------------- MENU-RECHERCHE--------------------------------------------------------*/ 
+.menu, .menu-bar-search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  z-index:10;  
+  overflow:hidden;
+  box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26);
+}
+.menu li a{
+display: block;
+text-indent: -500em;
+height: 5em;
+width: 5em;
+line-height: 5em;
+text-align:center;
+color: #72739f;
+position: relative;
+border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+transition: background 0.1s ease-in-out;
+}
+.menu li a:before {
+font-family: FontAwesome;
+speak: none;
+text-indent: 0em;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+font-size: 1.4em;
+}
+.menu li a.search:before {
+content: "\f002";
+}
+.menu li a.archive:before {
+content: "\f187";
+}
+.menu li a.pencil:before {
+content: "\f040";
+}
+.menu li a.contact:before {
+content: "\f003";
+}
+.menu li a.about:before {
+content: "\f007";
+}
+.menu li a.home:before {
+content: "\f039";
+}
+.menu-bar-search li a:hover,
+.menu li a:hover,
+.menu li:first-child a {
+background: #bac736;
+color: #fff;
+}
+.menu-bar-search{
+  overflow:hidden;
+  left:5em;
+  z-index:5;
+  width:0;
+  height:0;
+  transition: all 0.1s ease-in-out;
+}
+.menu-bar-search li a{
+display: block;
+height: 4em;
+line-height: 4em;
+text-align:center;
+color: #72739f;
+text-decoration:none;  
+position: relative;
+font-family:verdana;
+border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+transition: background 0.1s ease-in-out;
+}
+.menu-bar-search li:first-child a{
+  height:5em;
+  background: #bac736;
+  color: #fff;    
+  line-height:5
+}
+
+
+.para{
+  color:#033f72;
+  padding-left:100px;
+  font-size:3em;
+  margin-bottom:20px;
+}
+
+.open{
+  width:10em;
+  height:100%;
+}
+
+.close{
+  width: 0%;
+  height: 0%;
+}
+@media all and (max-width: 500px) {
+  .container{
+      margin-top:100px;
+  }
+  .menu{
+      height:5em;
+      width:100%;
+  }
+  .menu li{
+      display:inline-block;
+      float: left;
+  }
+  .menu-bar li a{
+      width:100%;
+  }
+  .menu-bar{
+      width:100%;
+      left:0;
+      height:0;
+  }
+  .open{
+      width:100%;
+      height:auto;
+  }
+  .para{
+  padding-left:5px;
+}  
+}
+@media screen and (max-height: 34em){
+.menu li,
+.menu-bar {
+  font-size:70%;
+}
+}
+@media screen and (max-height: 34em) and (max-width: 500px){
+.menu{
+      height:3.5em;
+  }
+}
+
+
+                                                        /*-------------------------------- BOUTON RECHERCHE--------------------------------------------------------*/ 
+.input-group {
+  position: relative;
+padding: 10%;
+ }
+ 
+ .input {
+  width: 100%;
+  height: 3vh;
+  border: solid 1.5px #9e9e9e;
+  border-radius: 1rem;
+  background: none;
+  font-size: 1rem;
+  color: black;
+  transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+ }
+ 
+ .user-label {
+  position: absolute;
+  left: 22%;
+  top: 12%;
+  color: #bac736;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4,0,0.2,1);
+ }
+ 
+ .input:focus, input:valid {
+  outline: none;
+  border: 1.5px solid #bac736;
+ }
+ 
+ .input:focus ~ label, input:valid ~ label {
+  transform: translateY(-50%) scale(0.8);
+  background-color: #212121;
+  padding: 0 .2em;
+  color: #bac736;
+ }
+/*-------------------------------- FIN DU MENU-RECHERCHE--------------------------------------------------------*/ 
 
 
 

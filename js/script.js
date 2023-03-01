@@ -1,11 +1,28 @@
 
 //------------------------------------MENU----------------------------//
 
-$(document).ready(function(){
-    $(".menu-button").click(function(){
-    $(".menu-bar").toggleClass( "open" );
-    })
-    }) 
+$(document).ready(function () {
+    $(".menu-button").click(function () {
+        $(".menu-bar-home").toggleClass("open");
+        $(".contact").removeClass("active");
+        $(this).toggleClass("active");
+        $(".menu-bar-contact").removeClass("open"); 
+    });
+
+    $(".contact").click(function () {
+        $(".menu-bar-contact").toggleClass("open");
+        $(".menu-button").removeClass("active");
+        $(this).toggleClass("active");
+        $(".menu-bar-home").removeClass("open"); 
+    });
+
+    $(".search").click(function () {
+        $(".menu-bar-search").toggleClass("open");
+        $(".menu-button").removeClass("active");
+        $(this).toggleClass("active");
+        $(".menu-bar-home").removeClass("open"); 
+    });
+});
 
 
 //------------------------------------------------------------------//    
@@ -29,7 +46,7 @@ var swiper = new Swiper('.product-slider', {
     //     // invert: false
     // },
     on: {
-        init: function(){
+        init: function () {
             var index = this.activeIndex;
 
             var target = $('.product-slider__item').eq(index).data('target');
@@ -37,7 +54,7 @@ var swiper = new Swiper('.product-slider', {
             console.log(target);
 
             $('.product-img__item').removeClass('active');
-            $('.product-img__item#'+ target).addClass('active');
+            $('.product-img__item#' + target).addClass('active');
         }
     }
 
@@ -51,23 +68,23 @@ swiper.on('slideChange', function () {
     console.log(target);
 
     $('.product-img__item').removeClass('active');
-    $('.product-img__item#'+ target).addClass('active');
+    $('.product-img__item#' + target).addClass('active');
 
-    if(swiper.isEnd) {
+    if (swiper.isEnd) {
         $('.prev').removeClass('disabled');
         $('.next').addClass('disabled');
     } else {
         $('.next').removeClass('disabled');
     }
 
-    if(swiper.isBeginning) {
+    if (swiper.isBeginning) {
         $('.prev').addClass('disabled');
     } else {
         $('.prev').removeClass('disabled');
     }
 });
 
-$(".js-fav").on("click", function() {
+$(".js-fav").on("click", function () {
     $(this).find('.heart').toggleClass("is-active");
 });
 
