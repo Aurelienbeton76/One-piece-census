@@ -2,25 +2,30 @@
 //------------------------------------MENU----------------------------//
 
 $(document).ready(function () {
-    $(".menu-button").click(function () {
+    $(document).on('click', '.menu-button', function () {
         $(".menu-bar-home").toggleClass("open");
         $(".contact").removeClass("active");
+        $(".search").removeClass("active");
         $(this).toggleClass("active");
-        $(".menu-bar-contact").removeClass("open"); 
+        $(".menu-bar-contact").removeClass("open");
+        $(".menu-bar-search").removeClass("open"); 
     });
 
-    $(".contact").click(function () {
+    $(document).on('click', '.contact', function () {
         $(".menu-bar-contact").toggleClass("open");
         $(".menu-button").removeClass("active");
+        $(".search").removeClass("active");
         $(this).toggleClass("active");
-        $(".menu-bar-home").removeClass("open"); 
+        $(".menu-bar-home").removeClass("open");
+        $(".menu-bar-search").removeClass("open"); 
     });
 
-    $(".search").click(function () {
+    $(document).on('click', '.search', function () {
         $(".menu-bar-search").toggleClass("open");
+        $(".search").toggleClass("active");
         $(".menu-button").removeClass("active");
-        $(this).toggleClass("active");
-        $(".menu-bar-home").removeClass("open"); 
+        $(".menu-bar-home").removeClass("open");
+        $(".menu-bar-contact").removeClass("open"); 
     });
 });
 

@@ -18,6 +18,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Dosis:400,600,700,800');
 @import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css");
+
 body {
   margin: 0;
   padding: 0;
@@ -25,11 +26,12 @@ body {
   font-family: 'Uni Sans', sans-serif;
   font-weight: 500;
 }
+
 :root {
-	--background: #000000;
-	--primary: #000000;
-	--secondary: #000000;
-	--third: #000000;
+  --background: #000000;
+  --primary: #000000;
+  --secondary: #000000;
+  --third: #000000;
 }
 
 
@@ -49,12 +51,12 @@ a {
 
 
 
-/*-------------------------------- TITILE--------------------------------------------------------*/ 
+/*-------------------------------- TITILE--------------------------------------------------------*/
 
-.title{
+.title {
   display: flex;
   justify-content: center;
-  font-size:xxx-large;
+  font-size: xxx-large;
   position: absolute;
   z-index: 8;
   width: 100%;
@@ -71,7 +73,7 @@ a {
 }
 
 .text-line text {
-  font-family: Helvetica,Arial,sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -83,8 +85,17 @@ a {
 }
 
 @keyframes filling {
-  0%, 90% { fill: #bac736; fill-opacity: 0; }
-  100% { fill: #bac736; fill-opacity: 1; }
+
+  0%,
+  90% {
+    fill: #bac736;
+    fill-opacity: 0;
+  }
+
+  100% {
+    fill: #bac736;
+    fill-opacity: 1;
+  }
 }
 
 
@@ -93,40 +104,44 @@ a {
 
 
 
-/*-------------------------------- FIN DU TITILE--------------------------------------------------------*/ 
+/*-------------------------------- FIN DU TITILE--------------------------------------------------------*/
 
 
 
 
 
-/*-------------------------------- MENU-HOME --------------------------------------------------------*/ 
+/*-------------------------------- MENU-HOME --------------------------------------------------------*/
 
 @import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css");
-.menu, .menu-bar-home {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background: #f7f7f7;
-    z-index:11;  
-    overflow:hidden;
-    box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26);
+
+.menu,
+.menu-bar-home {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  z-index: 11;
+  overflow: hidden;
+  box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26);
 }
-.menu li a{
+
+.menu li a {
   display: block;
   text-indent: -500em;
   height: 5em;
   width: 5em;
   line-height: 5em;
-  text-align:center;
+  text-align: center;
   color: #72739f;
   position: relative;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   transition: background 0.1s ease-in-out;
 }
+
 .menu li a:before {
   font-family: FontAwesome;
   speak: none;
@@ -138,113 +153,134 @@ a {
   height: 100%;
   font-size: 1.4em;
 }
+
 .menu li a.search:before {
   content: "\f002";
 }
+
 .menu li a.archive:before {
   content: "\f187";
 }
+
 .menu li a.pencil:before {
   content: "\f040";
 }
+
 .menu li a.contact:before {
   content: "\f003";
 }
+
 .menu li a.about:before {
   content: "\f007";
 }
+
 .menu li a.home:before {
   content: "\f039";
 }
+
 .menu-bar-home li a:hover,
 .menu li a:hover,
 .menu li:first-child a {
   background: #bac736;
   color: #fff;
 }
-.menu-bar-home{
-    overflow:hidden;
-    left:5em;
-    z-index:5;
-    width:0;
-    height:0;
-    transition: all 0.1s ease-in-out;
+
+.menu-bar-home {
+  overflow: hidden;
+  left: 5em;
+  z-index: 5;
+  width: 0;
+  height: 0;
+  transition: all 0.1s ease-in-out;
 }
-.menu-bar-home li a{
+
+.menu-bar-home li a {
   display: block;
   height: 4em;
   line-height: 4em;
-  text-align:center;
+  text-align: center;
   color: #72739f;
-  text-decoration:none;  
+  text-decoration: none;
   position: relative;
-  font-family:verdana;
+  font-family: verdana;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   transition: background 0.1s ease-in-out;
 }
-.menu-bar-home li:first-child a{
-    height:5em;
-    background: #bac736;
-    color: #fff;    
-    line-height:5
+
+.menu-bar-home li:first-child a {
+  height: 5em;
+  background: #bac736;
+  color: #fff;
+  line-height: 5
 }
 
 
-.para{
-    color:#033f72;
-    padding-left:100px;
-    font-size:3em;
-    margin-bottom:20px;
+.para {
+  color: #033f72;
+  padding-left: 100px;
+  font-size: 3em;
+  margin-bottom: 20px;
 }
 
-.open{
-    width:10em;
-    height:100%;
+.open {
+  width: 10em;
+  height: 100%;
 }
 
 @media all and (max-width: 500px) {
-    .container{
-        margin-top:100px;
-    }
-    .menu{
-        height:5em;
-        width:100%;
-    }
-    .menu li{
-        display:inline-block;
-        float: left;
-    }
-    .menu-bar li a{
-        width:100%;
-    }
-    .menu-bar{
-        width:100%;
-        left:0;
-        height:0;
-    }
-    .open{
-        width:100%;
-        height:auto;
-    }
-    .para{
-    padding-left:5px;
-}  
-}
-@media screen and (max-height: 34em){
-  .menu li,
+  .container {
+    margin-top: 100px;
+  }
+
+  .menu {
+    height: 5em;
+    width: 100%;
+  }
+
+  .menu li {
+    display: inline-block;
+    float: left;
+  }
+
+  .menu-bar li a {
+    width: 100%;
+  }
+
   .menu-bar {
-    font-size:70%;
+    width: 100%;
+    left: 0;
+    height: 0;
+  }
+
+  .open {
+    width: 100%;
+    height: auto;
+  }
+
+  .para {
+    padding-left: 5px;
   }
 }
-@media screen and (max-height: 34em) and (max-width: 500px){
-  .menu{
-        height:3.5em;
-    }
-}
-/*-------------------------------- FIN DU MENU-HOME--------------------------------------------------------*/ 
 
-/*-------------------------------- MENU-CONTACT--------------------------------------------------------*/ 
-.menu, .menu-bar-contact {
+@media screen and (max-height: 34em) {
+
+  .menu li,
+  .menu-bar {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-height: 34em) and (max-width: 500px) {
+  .menu {
+    height: 3.5em;
+  }
+}
+
+/*-------------------------------- FIN DU MENU-HOME--------------------------------------------------------*/
+
+/*-------------------------------- MENU-CONTACT--------------------------------------------------------*/
+.menu,
+.menu-bar-contact {
   position: fixed;
   top: 0;
   left: 0;
@@ -253,148 +289,172 @@ a {
   margin: 0;
   padding: 0;
   background: #f7f7f7;
-  z-index:10;  
-  overflow:hidden;
+  z-index: 10;
+  overflow: hidden;
   box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26);
 }
-.menu li a{
-display: block;
-text-indent: -500em;
-height: 5em;
-width: 5em;
-line-height: 5em;
-text-align:center;
-color: #72739f;
-position: relative;
-border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-transition: background 0.1s ease-in-out;
+
+.menu li a {
+  display: block;
+  text-indent: -500em;
+  height: 5em;
+  width: 5em;
+  line-height: 5em;
+  text-align: center;
+  color: #72739f;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: background 0.1s ease-in-out;
 }
+
 .menu li a:before {
-font-family: FontAwesome;
-speak: none;
-text-indent: 0em;
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-font-size: 1.4em;
+  font-family: FontAwesome;
+  speak: none;
+  text-indent: 0em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1.4em;
 }
+
 .menu li a.search:before {
-content: "\f002";
+  content: "\f002";
 }
+
 .menu li a.archive:before {
-content: "\f187";
+  content: "\f187";
 }
+
 .menu li a.pencil:before {
-content: "\f040";
+  content: "\f040";
 }
+
 .menu li a.contact:before {
-content: "\f003";
+  content: "\f003";
 }
+
 .menu li a.about:before {
-content: "\f007";
+  content: "\f007";
 }
+
 .menu li a.home:before {
-content: "\f039";
+  content: "\f039";
 }
+
 .menu-bar-contact li a:hover,
 .menu li a:hover,
 .menu li:first-child a {
-background: #bac736;
-color: #fff;
+  background: #bac736;
+  color: #fff;
 }
-.menu-bar-contact{
-  overflow:hidden;
-  left:5em;
-  z-index:5;
-  width:0;
-  height:0;
+
+.menu-bar-contact {
+  overflow: hidden;
+  left: 5em;
+  z-index: 5;
+  width: 0;
+  height: 0;
   transition: all 0.1s ease-in-out;
 }
-.menu-bar-contact li a{
-display: block;
-height: 4em;
-line-height: 4em;
-text-align:center;
-color: #72739f;
-text-decoration:none;  
-position: relative;
-font-family:verdana;
-border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-transition: background 0.1s ease-in-out;
+
+.menu-bar-contact li a {
+  display: block;
+  height: 4em;
+  line-height: 4em;
+  text-align: center;
+  color: #72739f;
+  text-decoration: none;
+  position: relative;
+  font-family: verdana;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: background 0.1s ease-in-out;
 }
-.menu-bar-contact li:first-child a{
-  height:5em;
+
+.menu-bar-contact li:first-child a {
+  height: 5em;
   background: #bac736;
-  color: #fff;    
-  line-height:5
+  color: #fff;
+  line-height: 5
 }
 
 
-.para{
-  color:#033f72;
-  padding-left:100px;
-  font-size:3em;
-  margin-bottom:20px;
+.para {
+  color: #033f72;
+  padding-left: 100px;
+  font-size: 3em;
+  margin-bottom: 20px;
 }
 
-.open{
-  width:10em;
-  height:100%;
+.open {
+  width: 10em;
+  height: 100%;
 }
 
-.close{
+.close {
   width: 0%;
   height: 0%;
 }
+
 @media all and (max-width: 500px) {
-  .container{
-      margin-top:100px;
+  .container {
+    margin-top: 100px;
   }
-  .menu{
-      height:5em;
-      width:100%;
+
+  .menu {
+    height: 5em;
+    width: 100%;
   }
-  .menu li{
-      display:inline-block;
-      float: left;
+
+  .menu li {
+    display: inline-block;
+    float: left;
   }
-  .menu-bar li a{
-      width:100%;
+
+  .menu-bar li a {
+    width: 100%;
   }
-  .menu-bar{
-      width:100%;
-      left:0;
-      height:0;
+
+  .menu-bar {
+    width: 100%;
+    left: 0;
+    height: 0;
   }
-  .open{
-      width:100%;
-      height:auto;
+
+  .open {
+    width: 100%;
+    height: auto;
   }
-  .para{
-  padding-left:5px;
-}  
-}
-@media screen and (max-height: 34em){
-.menu li,
-.menu-bar {
-  font-size:70%;
-}
-}
-@media screen and (max-height: 34em) and (max-width: 500px){
-.menu{
-      height:3.5em;
+
+  .para {
+    padding-left: 5px;
   }
 }
-/*-------------------------------- FIN DU MENU-CONTACT--------------------------------------------------------*/ 
+
+@media screen and (max-height: 34em) {
+
+  .menu li,
+  .menu-bar {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-height: 34em) and (max-width: 500px) {
+  .menu {
+    height: 3.5em;
+  }
+}
+
+/*-------------------------------- FIN DU MENU-CONTACT--------------------------------------------------------*/
 
 
 
 
 
-/*-------------------------------- MENU-RECHERCHE--------------------------------------------------------*/ 
-.menu, .menu-bar-search {
+/*-------------------------------- MENU-RECHERCHE--------------------------------------------------------*/
+.menu,
+.menu-bar-search {
   position: fixed;
   top: 0;
   left: 0;
@@ -403,149 +463,170 @@ transition: background 0.1s ease-in-out;
   margin: 0;
   padding: 0;
   background: #f7f7f7;
-  z-index:10;  
-  overflow:hidden;
+  z-index: 10;
+  overflow: hidden;
   box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26);
 }
-.menu li a{
-display: block;
-text-indent: -500em;
-height: 5em;
-width: 5em;
-line-height: 5em;
-text-align:center;
-color: #72739f;
-position: relative;
-border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-transition: background 0.1s ease-in-out;
+
+.menu li a {
+  display: block;
+  text-indent: -500em;
+  height: 5em;
+  width: 5em;
+  line-height: 5em;
+  text-align: center;
+  color: #72739f;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: background 0.1s ease-in-out;
 }
+
 .menu li a:before {
-font-family: FontAwesome;
-speak: none;
-text-indent: 0em;
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-font-size: 1.4em;
+  font-family: FontAwesome;
+  speak: none;
+  text-indent: 0em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1.4em;
 }
+
 .menu li a.search:before {
-content: "\f002";
+  content: "\f002";
 }
+
 .menu li a.archive:before {
-content: "\f187";
+  content: "\f187";
 }
+
 .menu li a.pencil:before {
-content: "\f040";
+  content: "\f040";
 }
+
 .menu li a.contact:before {
-content: "\f003";
+  content: "\f003";
 }
+
 .menu li a.about:before {
-content: "\f007";
+  content: "\f007";
 }
+
 .menu li a.home:before {
-content: "\f039";
+  content: "\f039";
 }
+
 .menu-bar-search li a:hover,
 .menu li a:hover,
 .menu li:first-child a {
-background: #bac736;
-color: #fff;
+  background: #bac736;
+  color: #fff;
 }
-.menu-bar-search{
-  overflow:hidden;
-  left:5em;
-  z-index:5;
-  width:0;
-  height:0;
+
+.menu-bar-search {
+  overflow: hidden;
+  left: 5em;
+  z-index: 5;
+  width: 0;
+  height: 0;
   transition: all 0.1s ease-in-out;
 }
-.menu-bar-search li a{
-display: block;
-height: 4em;
-line-height: 4em;
-text-align:center;
-color: #72739f;
-text-decoration:none;  
-position: relative;
-font-family:verdana;
-border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-transition: background 0.1s ease-in-out;
+
+.menu-bar-search li a {
+  display: block;
+  height: 4em;
+  line-height: 4em;
+  text-align: center;
+  color: #72739f;
+  text-decoration: none;
+  position: relative;
+  font-family: verdana;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: background 0.1s ease-in-out;
 }
-.menu-bar-search li:first-child a{
-  height:5em;
+
+.menu-bar-search li:first-child a {
+  height: 5em;
   background: #bac736;
-  color: #fff;    
-  line-height:5
+  color: #fff;
+  line-height: 5
 }
 
 
-.para{
-  color:#033f72;
-  padding-left:100px;
-  font-size:3em;
-  margin-bottom:20px;
+.para {
+  color: #033f72;
+  padding-left: 100px;
+  font-size: 3em;
+  margin-bottom: 20px;
 }
 
-.open{
-  width:10em;
-  height:100%;
+.open {
+  width: 10em;
+  height: 100%;
 }
 
-.close{
-  width: 0%;
-  height: 0%;
-}
+
 @media all and (max-width: 500px) {
-  .container{
-      margin-top:100px;
+  .container {
+    margin-top: 100px;
   }
-  .menu{
-      height:5em;
-      width:100%;
+
+  .menu {
+    height: 5em;
+    width: 100%;
   }
-  .menu li{
-      display:inline-block;
-      float: left;
+
+  .menu li {
+    display: inline-block;
+    float: left;
   }
-  .menu-bar li a{
-      width:100%;
+
+  .menu-bar li a {
+    width: 100%;
   }
-  .menu-bar{
-      width:100%;
-      left:0;
-      height:0;
+
+  .menu-bar {
+    width: 100%;
+    left: 0;
+    height: 0;
   }
-  .open{
-      width:100%;
-      height:auto;
+
+  .open {
+    width: 100%;
+    height: auto;
   }
-  .para{
-  padding-left:5px;
-}  
+
+  .para {
+    padding-left: 5px;
+  }
 }
-@media screen and (max-height: 34em){
-.menu li,
-.menu-bar {
-  font-size:70%;
+
+@media screen and (max-height: 34em) {
+
+  .menu li,
+  .menu-bar {
+    font-size: 70%;
+  }
 }
-}
-@media screen and (max-height: 34em) and (max-width: 500px){
-.menu{
-      height:3.5em;
+
+@media screen and (max-height: 34em) and (max-width: 500px) {
+  .menu {
+    height: 3.5em;
   }
 }
 
 
-                                                        /*-------------------------------- BOUTON RECHERCHE--------------------------------------------------------*/ 
+/*-------------------------------- BOUTON RECHERCHE--------------------------------------------------------*/
+
+
+
 .input-group {
   position: relative;
-padding: 10%;
- }
- 
- .input {
+  padding: 10%;
+}
+
+.input {
   width: 100%;
   height: 3vh;
   border: solid 1.5px #9e9e9e;
@@ -553,38 +634,41 @@ padding: 10%;
   background: none;
   font-size: 1rem;
   color: black;
-  transition: border 150ms cubic-bezier(0.4,0,0.2,1);
- }
- 
- .user-label {
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.user-label {
   position: absolute;
   left: 22%;
   top: 12%;
   color: #bac736;
   pointer-events: none;
   transform: translateY(1rem);
-  transition: 150ms cubic-bezier(0.4,0,0.2,1);
- }
- 
- .input:focus, input:valid {
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:focus,
+input:valid {
   outline: none;
   border: 1.5px solid #bac736;
- }
- 
- .input:focus ~ label, input:valid ~ label {
+}
+
+.input:focus~label,
+input:valid~label {
   transform: translateY(-50%) scale(0.8);
   background-color: #212121;
   padding: 0 .2em;
   color: #bac736;
- }
-/*-------------------------------- FIN DU MENU-RECHERCHE--------------------------------------------------------*/ 
+}
+
+/*-------------------------------- FIN DU MENU-RECHERCHE--------------------------------------------------------*/
 
 
 
 
 
-/*-------------------------------- PAGE D'ACCEUIL--------------------------------------------------------*/ 
-/*-------------------------------- BACKGROUND VIDEO --------------------------------------------------------*/ 
+/*-------------------------------- PAGE D'ACCEUIL--------------------------------------------------------*/
+/*-------------------------------- BACKGROUND VIDEO --------------------------------------------------------*/
 .back-video video {
   position: absolute;
   top: 0;
@@ -595,9 +679,10 @@ padding: 10%;
   object-position: center;
   pointer-events: none;
 }
-/*-------------------------------- FIN DU BACKGROUND VIDEO--------------------------------------------------------*/ 
 
-/*-------------------------------- ICONES FLECHES --------------------------------------------------------*/ 
+/*-------------------------------- FIN DU BACKGROUND VIDEO--------------------------------------------------------*/
+
+/*-------------------------------- ICONES FLECHES --------------------------------------------------------*/
 .icon {
   display: inline-block;
   width: 1em;
@@ -606,10 +691,11 @@ padding: 10%;
   stroke: currentColor;
   fill: currentColor;
 }
-/*-------------------------------- FIN DES ICONES FLECHES --------------------------------------------------------*/ 
+
+/*-------------------------------- FIN DES ICONES FLECHES --------------------------------------------------------*/
 
 
-/*-------------------------------- CONTENANT DE TOUTE LA PAGE SANS MENU NI FOOTER --------------------------------------------------------*/ 
+/*-------------------------------- CONTENANT DE TOUTE LA PAGE SANS MENU NI FOOTER --------------------------------------------------------*/
 
 .wrapper {
   width: 100%;
@@ -666,12 +752,13 @@ padding: 10%;
   }
 
 }
-/*-------------------------------- FIN DU CONTENANT DE TOUTE LA PAGE SANS MENU NI FOOTER --------------------------------------------------------*/ 
 
-/*-------------------------------- DRAPEAU D'EQUIPAGE DERIERE LE PERSO --------------------------------------------------------*/ 
+/*-------------------------------- FIN DU CONTENANT DE TOUTE LA PAGE SANS MENU NI FOOTER --------------------------------------------------------*/
+
+/*-------------------------------- DRAPEAU D'EQUIPAGE DERIERE LE PERSO --------------------------------------------------------*/
 .shape {
-  
-  border-radius: 5% 5% 5% 5% ;
+
+  border-radius: 5% 5% 5% 5%;
   max-width: 500px;
   height: auto;
   position: absolute;
@@ -705,10 +792,10 @@ padding: 10%;
 
 
   img {
-    border-radius: 5% 5% 5% 5% ;
-   max-width: 500px;
-   height: auto;
-   
+    border-radius: 5% 5% 5% 5%;
+    max-width: 500px;
+    height: auto;
+
     opacity: .8;
 
 
@@ -718,7 +805,7 @@ padding: 10%;
     }
 
     @media screen and (max-width: 992px) {
-    transform: none;
+      transform: none;
       width: 100%;
       position: relative;
       left: auto;
@@ -733,10 +820,11 @@ padding: 10%;
   }
 
 }
-/*-------------------------------- FIN DU DRAPEAU D'EQUIPAGE DERIERE LE PERSO --------------------------------------------------------*/ 
+
+/*-------------------------------- FIN DU DRAPEAU D'EQUIPAGE DERIERE LE PERSO --------------------------------------------------------*/
 
 
-/*-------------------------------- FLECHES DE DIRECTIONS  --------------------------------------------------------*/ 
+/*-------------------------------- FLECHES DE DIRECTIONS  --------------------------------------------------------*/
 
 .next,
 .prev {
@@ -797,12 +885,12 @@ padding: 10%;
 
 }
 
-/*-------------------------------- FIN DES FLECHES DE DIRECTIONS --------------------------------------------------------*/ 
+/*-------------------------------- FIN DES FLECHES DE DIRECTIONS --------------------------------------------------------*/
 
 
 
 .product {
-/*-------------------------------- CONTAINER DU CENTRE --------------------------------------------------------*/ 
+  /*-------------------------------- CONTAINER DU CENTRE --------------------------------------------------------*/
 
   &-slider {
     width: 75%;
@@ -812,7 +900,8 @@ padding: 10%;
     position: absolute;
     top: 60%;
     right: 0;
-    transform: translateY(-50%);   /*-------------------------------- ICI POUR CHANGER LA HAUTEUR DU CONTAINER CENTRAL----------------------------------*/ 
+    transform: translateY(-50%);
+    /*-------------------------------- ICI POUR CHANGER LA HAUTEUR DU CONTAINER CENTRAL----------------------------------*/
 
 
     @media screen and (max-width: 1200px) {
@@ -843,15 +932,15 @@ padding: 10%;
       width: 85%;
       margin-top: 130px;
     }
- 
+
 
     &__wrp {
       height: 100%;
-      
+
     }
 
     &__item {
-      
+
       position: relative;
       height: 100%;
       width: 100%;
@@ -862,7 +951,7 @@ padding: 10%;
 
       &.swiper-slide-active {
         .product-slider__card {
-        opacity: 1;
+          opacity: 1;
           width: 100%;
           pointer-events: auto;
           transition-delay: .5s;
@@ -892,7 +981,7 @@ padding: 10%;
     }
 
     &__card {
-      
+
       height: 100%;
       display: flex;
       align-items: center;
@@ -910,7 +999,8 @@ padding: 10%;
         border-radius: 20px;
       }
     }
-/*  bg de la carte centrale  \/      */ 
+
+    /*  bg de la carte centrale  \/      */
     &__cover {
       filter: brightness(30%);
       border-radius: 30px;
@@ -928,7 +1018,7 @@ padding: 10%;
     }
 
     &__content {
-      
+
       color: #fff;
       padding-top: 1px;
       position: relative;
@@ -1285,6 +1375,7 @@ padding: 10%;
   }
 
 }
+
 svg.hidden {
   display: block;
   position: absolute;
@@ -1292,14 +1383,14 @@ svg.hidden {
   left: -9999px;
 }
 
-/*-------------------------------- FIN DE LA PAGE D'ACCEUIL --------------------------------------------------------*/ 
+/*-------------------------------- FIN DE LA PAGE D'ACCEUIL --------------------------------------------------------*/
 
 
 
-/*-------------------------------- FOOTER --------------------------------------------------------*/ 
+/*-------------------------------- FOOTER --------------------------------------------------------*/
 
 
-.footer1{
+.footer1 {
   display: flex;
   color: #bac736;
   justify-content: flex-end;
@@ -1311,8 +1402,8 @@ svg.hidden {
   width: 100%;
   z-index: 1;
   height: 100vh;
- 
+
 }
 
 
-/*-------------------------------- FIN DU FOOTER --------------------------------------------------------*/ 
+/*-------------------------------- FIN DU FOOTER --------------------------------------------------------*/

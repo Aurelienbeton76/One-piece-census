@@ -80,7 +80,8 @@ a {
 }
 /*-------------------------------- FIN DU TITILE--------------------------------------------------------*/
 /*-------------------------------- MENU-HOME --------------------------------------------------------*/
-.menu, .menu-bar-home {
+.menu,
+.menu-bar-home {
   position: fixed;
   top: 0;
   left: 0;
@@ -232,7 +233,8 @@ a {
 }
 /*-------------------------------- FIN DU MENU-HOME--------------------------------------------------------*/
 /*-------------------------------- MENU-CONTACT--------------------------------------------------------*/
-.menu, .menu-bar-contact {
+.menu,
+.menu-bar-contact {
   position: fixed;
   top: 0;
   left: 0;
@@ -389,7 +391,8 @@ a {
 }
 /*-------------------------------- FIN DU MENU-CONTACT--------------------------------------------------------*/
 /*-------------------------------- MENU-RECHERCHE--------------------------------------------------------*/
-.menu, .menu-bar-search {
+.menu,
+.menu-bar-search {
   position: fixed;
   top: 0;
   left: 0;
@@ -500,11 +503,6 @@ a {
   height: 100%;
 }
 
-.close {
-  width: 0%;
-  height: 0%;
-}
-
 @media all and (max-width: 500px) {
   .container {
     margin-top: 100px;
@@ -571,12 +569,14 @@ a {
   transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input:focus, input:valid {
+.input:focus,
+input:valid {
   outline: none;
   border: 1.5px solid #bac736;
 }
 
-.input:focus ~ label, input:valid ~ label {
+.input:focus ~ label,
+input:valid ~ label {
   transform: translateY(-50%) scale(0.8);
   background-color: #212121;
   padding: 0 0.2em;
@@ -803,7 +803,8 @@ a {
   position: absolute;
   top: 60%;
   right: 0;
-  transform: translateY(-50%); /*-------------------------------- ICI POUR CHANGER LA HAUTEUR DU CONTAINER CENTRAL----------------------------------*/
+  transform: translateY(-50%);
+  /*-------------------------------- ICI POUR CHANGER LA HAUTEUR DU CONTAINER CENTRAL----------------------------------*/
   /*  bg de la carte centrale  \/      */
 }
 @media screen and (max-width: 1200px) {
